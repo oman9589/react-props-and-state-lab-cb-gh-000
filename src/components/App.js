@@ -16,11 +16,10 @@ class App extends React.Component {
     };
   }
 
-  handleChangeType = (newType) => {
+  handleChangeType = (type) => {
     this.setState({
-      ...this.state,
       filters: {
-        type: newType,
+        type: type,
       }
     })
   }
