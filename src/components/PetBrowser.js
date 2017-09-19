@@ -8,7 +8,7 @@ class PetBrowser extends React.Component {
       this.props.pets.map((pet) => {
         return (
           <Pet />
-        )
+        );
       })
     }
     return (
