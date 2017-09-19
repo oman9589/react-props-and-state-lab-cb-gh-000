@@ -36,6 +36,10 @@ class App extends React.Component {
       .then(pets => this.setState({ pets }));
   }
 
+  handleAdoptPet = (id) => {
+    this.state.adoptedPets.push(id)
+  }
+
   render() {
     return (
       <div className="ui container">
