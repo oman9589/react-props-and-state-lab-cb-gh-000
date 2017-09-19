@@ -19,9 +19,9 @@ class App extends React.Component {
   handleChangeType = (type) => {
     this.setState({
       ...this.state,
-      filters: {
+      filters: Object.assign({}, this.state.filters, {
         type: type,
-      }
+      })
     })
   }
 
