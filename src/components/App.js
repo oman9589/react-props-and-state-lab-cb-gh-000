@@ -32,22 +32,20 @@ class App extends React.Component {
           .then(pets => this.setState({ pets }))
         break;
       case 'cat':
-        this.setState({
-          ...this.state,
-          pets: fetch('/api/pets?type=cat').then(res => res.json())
-        })
+        fetch('/api/pets/cat')
+          .then(res => res.json())
+          .then(pets => this.setState({ pets }))
         break;
       case 'dog':
-        this.setState({
-          ...this.state,
-          pets: fetch('/api/pets?type=dog')
+        fetch('/api/pets/dog')
+          .then(res => res.json())
+          .then(pets => this.setState({ pets }))
         })
         break;
       case 'micropig':
-        this.setState({
-          ...this.state,
-          pets: fetch('/api/pets?type=micropig')
-        })
+        fetch('/api/pets/micropig')
+          .then(res => res.json())
+          .then(pets => this.setState({ pets }))
         break;
     }
   }
