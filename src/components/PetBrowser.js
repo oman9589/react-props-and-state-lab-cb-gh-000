@@ -13,7 +13,7 @@ class PetBrowser extends React.Component {
                  onAdoptPet={this.props.onAdoptPet}
                  isAdopted={this.props.adoptedPets.contains(this.pet.name)}/>
         ))}
-        {window.alert(pet)}
+        {window.alert(this.pets)}
       </div>
     );
   }
