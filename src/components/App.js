@@ -34,7 +34,7 @@ class App extends React.Component {
       case 'cat':
         this.setState({
           ...this.state,
-          pets: fetch('/api/pets?type=cat')
+          pets: fetch('/api/pets?type=cat').then(res => res.json())
         })
         break;
       case 'dog':
