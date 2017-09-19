@@ -10,7 +10,7 @@ class Filters extends React.Component {
   }
 
   handleFindPetsClick = () => {
-    this.props.onFindPetsClick();
+    this.props.onFindPetsClick;
   }
 
   render() {
