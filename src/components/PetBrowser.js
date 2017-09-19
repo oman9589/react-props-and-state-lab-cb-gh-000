@@ -7,7 +7,8 @@ class PetBrowser extends React.Component {
     const pets = () => {
       this.props.pets.map((pet) => {
         return (
-          <Pet onAdoptPet={this.props.onAdoptPet} isAdopted={this.props.adoptedPets.contains(this.pet.name)}/>
+          <Pet onAdoptPet={this.props.onAdoptPet} 
+               isAdopted={this.props.adoptedPets.contains(this.pet.name)}/>
         );
       })
     }
