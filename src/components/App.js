@@ -32,6 +32,7 @@ class App extends React.Component {
           ...this.state,
           pets: fetch('/api/pets')
         })
+        window.alert('test');
         break;
       case 'cat':
         this.setState({
