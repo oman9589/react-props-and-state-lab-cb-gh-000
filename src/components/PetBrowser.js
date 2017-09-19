@@ -5,7 +5,6 @@ class PetBrowser extends React.Component {
   render() {
 
     const pets = this.props.pets.map(pet => {
-      window.alert(pet)
       return (
         <Pet name={pet.name}
            gender={pet.gender}
