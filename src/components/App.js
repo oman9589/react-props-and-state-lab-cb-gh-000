@@ -26,12 +26,12 @@ class App extends React.Component {
 
   handleFindPetsClick = () => {
     switch(this.state.filters.type) {
-      case 'all':
+      case 'cat':
         fetch('/api/pets')
           .then(res => res.json())
           .then(pets => this.setState({ pets }))
         break;
-      case 'cat':
+      case 'all':
         fetch('/api/pets/cat')
           .then(res => res.json())
           .then(pets => this.setState({ pets }))
