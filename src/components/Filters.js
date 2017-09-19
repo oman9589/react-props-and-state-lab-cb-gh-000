@@ -8,11 +8,7 @@ class Filters extends React.Component {
   handleChange = (event) => {
     this.props.onChangeType(event.target.value);
   }
-
-  handleFindPetsClick = () => {
-    this.props.onFindPetsClick;
-  }
-
+  
   render() {
     return (
       <div className="ui form">
