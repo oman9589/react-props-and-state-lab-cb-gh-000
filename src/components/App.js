@@ -18,10 +18,10 @@ class App extends React.Component {
 
   handleChangeType = (type) => {
     this.setState({
-      filters: Object.assign({}, this.state.filters, {
-        type: this.type,
-      })
-    })
+     filters: Object.assign({}, this.state.filters, {
+       type: type,
+     })
+   });
   }
 
   handleFindPetsClick = () => {
