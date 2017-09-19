@@ -30,7 +30,7 @@ class App extends React.Component {
       case 'all':
         this.setState({
           ...this.state,
-          pets: {this.props.fetchAll}
+          pets: this.props.fetchAll
         })
         window.alert('test');
         break;
