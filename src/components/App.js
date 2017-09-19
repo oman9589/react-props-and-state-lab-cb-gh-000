@@ -30,7 +30,7 @@ class App extends React.Component {
       case 'all':
         this.setState({
           ...this.state,
-          pets: {this.fetch('/api/pets')}
+          pets: {fetch('/api/pets')}
         })
         window.alert('test');
         break;
