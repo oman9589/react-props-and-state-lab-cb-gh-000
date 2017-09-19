@@ -4,6 +4,7 @@ import Pet from './Pet';
 class PetBrowser extends React.Component {
   render() {
     return (
+      {window.alert('test')}
       <div className="ui cards">
         {this.props.pets.map((pet, index) => (
             <Pet name={pet.name}
@@ -13,7 +14,6 @@ class PetBrowser extends React.Component {
                  onAdoptPet={this.props.onAdoptPet}
                  isAdopted={this.props.adoptedPets.contains(this.pet.name)}/>
         ))}
-        {window.alert(this.props.pets)}
       </div>
     );
   }
