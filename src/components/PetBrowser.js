@@ -12,6 +12,7 @@ class PetBrowser extends React.Component {
     return (
       <div className="ui cards">
         {pets}
+        <Pet />
       </div>
     );
   }
