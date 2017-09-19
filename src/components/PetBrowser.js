@@ -6,6 +6,7 @@ class PetBrowser extends React.Component {
     const pets = () => {
       this.props.pets.map((pet, index) => (
           <Pet name={pet.name}
+               {window.alert(pet)}
                gender={pet.gender}
                age={pet.age}
                type={pet.type}
@@ -15,7 +16,6 @@ class PetBrowser extends React.Component {
     }
     return (
       <div className="ui cards">
-        {window.alert(this.props.pets)}
         {this.props.pets.map((pet, index) => (
             <Pet name={pet.name}
                  gender={pet.gender}
