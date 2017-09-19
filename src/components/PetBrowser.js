@@ -11,7 +11,7 @@ class PetBrowser extends React.Component {
     }
     return (
       <div className="ui cards">
-        <Pet />
+        this.pets()
       </div>
     );
   }
