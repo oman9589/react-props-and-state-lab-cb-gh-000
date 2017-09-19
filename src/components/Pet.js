@@ -5,6 +5,10 @@ class Pet extends React.Component {
     super();
   }
 
+  handleAdoption = () => {
+    this.props.onAdoptPet(this.props.id)
+  }
+
   render() {
     return (
       <div className="card">
