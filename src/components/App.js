@@ -25,28 +25,15 @@ class App extends React.Component {
   }
 
   handleFindPetsClick = () => {
-    switch(this.state.filters.type) {
-      case 'all':
-        fetch('/api/pets')
-          .then(res => res.json())
-          .then(pets => this.setState({ pets }))
-        break;
-      case 'cat':
-        fetch('/api/pets/cat')
-          .then(res => res.json())
-          .then(pets => this.setState({ pets }))
-        break;
-      case 'dog':
-        fetch('/api/pets/dog')
-          .then(res => res.json())
-          .then(pets => this.setState({ pets }))
-        break;
-      case 'micropig':
-        fetch('/api/pets/micropig')
-          .then(res => res.json())
-          .then(pets => this.setState({ pets }))
-        break;
+    let url = '/api/pets';
+
+    if (this.state.filters.type !== 'all') {
+      url += `?type=${this.state.filters.type}`;
     }
+
+    fetch(url)
+      .then(res => res.json())
+      .then(pets => this.setState({ pets }));
   }
 
   render() {
