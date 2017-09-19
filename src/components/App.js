@@ -35,16 +35,19 @@ class App extends React.Component {
         break;
       case 'cat':
         this.setState({
+          ...this.state,
           pets: fetch('/api/pets?type=cat')
         })
         break;
       case 'dog':
         this.setState({
+          ...this.state,
           pets: fetch('/api/pets?type=dog')
         })
         break;
       case 'micropig':
         this.setState({
+          ...this.state,
           pets: fetch('/api/pets?type=micropig')
         })
         break;
