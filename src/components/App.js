@@ -29,7 +29,7 @@ class App extends React.Component {
     switch(this.state.filters.type) {
       case 'all':
         this.setState({
-          ...this.state
+          ...this.state,
           pets: fetch('/api/pets')
         })
         break;
