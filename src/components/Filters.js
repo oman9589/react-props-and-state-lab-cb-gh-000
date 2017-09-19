@@ -6,7 +6,11 @@ class Filters extends React.Component {
   }
 
   handleChange = (event) => {
-    this.onChangeType(event.target.value);
+    this.props.onChangeType(event.target.value);
+  }
+
+  handleFindPetsClick = () => {
+    this.props.onFindPetsClick();
   }
 
   render() {
