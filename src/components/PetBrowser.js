@@ -15,7 +15,7 @@ class PetBrowser extends React.Component {
                isAdopted={this.props.adoptedPets.contains(pet.name)}/>
           )
         }}
-      </div>
+    </div>
   }
 }
 
