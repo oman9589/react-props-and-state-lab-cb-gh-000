@@ -8,7 +8,7 @@ class PetBrowser extends React.Component {
       return (
         <Pet pet={pet}
              onAdoptPet={this.props.onAdoptPet}
-             isAdopted={this.props.adoptedPets.contains(pet.name)}/>
+             isAdopted={this.props.adoptedPets.includes(pet.id)}/>
       )
     })
 
