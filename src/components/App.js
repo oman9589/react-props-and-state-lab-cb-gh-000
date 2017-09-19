@@ -16,6 +16,15 @@ class App extends React.Component {
     };
   }
 
+  handleChangeType = (newType) => {
+    this.setState({
+      ...this.state,
+      filters: {
+        type: newType,
+      }
+    })
+  }
+
   render() {
     return (
       <div className="ui container">
