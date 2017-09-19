@@ -61,7 +61,7 @@ class App extends React.Component {
             <div className="four wide column">
               <Filters filters={this.state.filters.type}
                        onChangeType={this.handleChangeType}
-                       onFindPetsClick{this.handleFindPetsClick}/>
+                       onFindPetsClick={this.handleFindPetsClick}/>
             </div>
             <div className="twelve wide column">
               <PetBrowser pets={this.state.pets}/>
