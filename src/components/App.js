@@ -69,7 +69,7 @@ class App extends React.Component {
             </div>
             <div className="twelve wide column">
               <PetBrowser pets={this.state.pets}
-                          onAdoptPet={() => return null;}
+                          onAdoptPet={this.handleAdoptPet}
                           adoptedPets={this.state.adoptedPets}/>
             </div>
           </div>
