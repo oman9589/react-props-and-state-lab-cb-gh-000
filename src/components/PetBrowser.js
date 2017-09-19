@@ -1,5 +1,4 @@
 import React from 'react';
-import { includes } from 'Array.prototype'
 import Pet from './Pet';
 
 class PetBrowser extends React.Component {
@@ -7,7 +6,7 @@ class PetBrowser extends React.Component {
     const pets = () => {
       this.props.pets.map((pet) => {
         return (
-          <Pet onAdoptPet={this.props.onAdoptPet} 
+          <Pet onAdoptPet={this.props.onAdoptPet}
                isAdopted={this.props.adoptedPets.contains(this.pet.name)}/>
         );
       })
