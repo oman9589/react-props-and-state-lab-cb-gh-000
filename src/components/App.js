@@ -40,7 +40,6 @@ class App extends React.Component {
         fetch('/api/pets/dog')
           .then(res => res.json())
           .then(pets => this.setState({ pets }))
-        })
         break;
       case 'micropig':
         fetch('/api/pets/micropig')
