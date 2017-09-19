@@ -5,9 +5,9 @@ import Pet from './Pet';
 class PetBrowser extends React.Component {
   render() {
     const pets = () => {
-      this.props.pets.map(() => {
+      this.props.pets.map((pet) => {
         return (
-          <Pet onAdoptPet={this.props.onAdoptPet} isAdopted={}/>
+          <Pet onAdoptPet={this.props.onAdoptPet} isAdopted={this.props.adoptedPets.contains(this.pet.name)}/>
         );
       })
     }
