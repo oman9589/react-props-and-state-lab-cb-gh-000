@@ -32,7 +32,7 @@ class App extends React.Component {
           ...this.state,
           pets: this.props.fetchAll
         })
-        window.alert(this.props.pets);
+        window.alert(this.state.pets);
         break;
       case 'cat':
         this.setState({
