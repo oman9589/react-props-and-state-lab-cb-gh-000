@@ -68,7 +68,7 @@ class App extends React.Component {
                        onFindPetsClick={this.handleFindPetsClick}/>
             </div>
             <div className="twelve wide column">
-              {window.alert(this.state.pets)}
+              {window.alert(this.state.pets[0].name)}
               <PetBrowser pets={this.state.pets}
                           onAdoptPet={this.handleAdoptPet}
                           adoptedPets={this.state.adoptedPets}/>
